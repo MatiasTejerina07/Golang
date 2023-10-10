@@ -1,9 +1,9 @@
 package main
 
 import (
-	"fmt"
+	"github.com/MatiasTejerina07/Golang/variables"
 )
 
 func main() {
-	fmt.Println("Hello World!")
+	variables.ShowEnteros()
 }
