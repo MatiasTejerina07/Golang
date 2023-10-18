@@ -1,15 +1,11 @@
 package main
 
 import (
-	"fmt"
-	"runtime"
-
-	"github.com/MatiasTejerina07/Golang/ejercicios"
-	"github.com/MatiasTejerina07/Golang/variables"
+	"github.com/MatiasTejerina07/Golang/iteraciones"
 )
 
 func main() {
-	texto, number := ejercicios.Ejercicio1("59")
+	/* texto, number := ejercicios.Ejercicio1("59")
 	fmt.Println(texto, number)
 
 	estado, text := variables.ConverText(20)
@@ -30,6 +26,8 @@ func main() {
 		fmt.Println("Esto es windows")
 	default:
 		fmt.Println("matias")
-	}
+	} */
+
+	iteraciones.Iterar()
 
 }
