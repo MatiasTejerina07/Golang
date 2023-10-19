@@ -33,5 +33,5 @@ func main() {
 	/* iteraciones.AllExcept() */
 	/* ejercicios.InputNumber() */
 	//files.SaveTable()
-	files.AddTable()
+	files.ReadText()
 }

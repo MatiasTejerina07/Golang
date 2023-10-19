@@ -1,9 +1,8 @@
 package files
 
 import (
-	//"bufio"
 	"fmt"
-	//"ioutil"
+	"io/ioutil"
 	"os"
 
 	"github.com/MatiasTejerina07/Golang/ejercicios"
@@ -24,7 +23,7 @@ func SaveTable() {
 
 func AddTable() {
 	var text string = ejercicios.InputNumber()
-	if Append(filename, text) == false {
+	if !Append(filename, text) {
 		fmt.Println("Error al agregar el archivo")
 	}
 }
@@ -43,4 +42,13 @@ func Append(filen string, texto string) bool {
 	}
 	arch.Close()
 	return true
+}
+
+func ReadText() {
+	datos, err := ioutil.ReadFile(filename)
+	if err != nil {
+		fmt.Println("Error al leer el archivo" + err.Error())
+		return
+	}
+	fmt.Println(string(datos))
 }
