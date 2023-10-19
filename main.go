@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/MatiasTejerina07/Golang/files"
+	"github.com/MatiasTejerina07/Golang/funciones"
 )
 
 func main() {
@@ -33,5 +33,6 @@ func main() {
 	/* iteraciones.AllExcept() */
 	/* ejercicios.InputNumber() */
 	//files.SaveTable()
-	files.ReadText()
+	/* files.ReadText() */
+	funciones.CallClosure()
 }
