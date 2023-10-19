@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/MatiasTejerina07/Golang/iteraciones"
+	"github.com/MatiasTejerina07/Golang/ejercicios"
 )
 
 func main() {
@@ -28,6 +28,9 @@ func main() {
 		fmt.Println("matias")
 	} */
 
-	iteraciones.Iterar()
+	/* iteraciones.Iterar() */
+	/* iteraciones.JumpsFromTo() */
+	/* iteraciones.AllExcept() */
+	ejercicios.InputNumber()
 
 }
