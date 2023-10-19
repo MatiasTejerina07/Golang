@@ -7,29 +7,26 @@ import (
 	"strconv"
 )
 
-var err error
-var number int
-var scan = bufio.NewScanner(os.Stdin)
+func InputNumber() string {
+	scan := bufio.NewScanner(os.Stdin)
+	var err error
+	var number int
+	var text string
 
-func InputNumber() {
-	iterar := func() {
-		fmt.Println("Ingrese el primero número")
+	for {
+		fmt.Println("Ingrese el número:")
 		if scan.Scan() {
 			number, err = strconv.Atoi(scan.Text())
-			fmt.Println("el numero que ingresaste es:", number)
-		}
-	}
-
-	iterar()
-
-	for err != nil {
-		fmt.Println("El numero ingresado no esta permitido, debe ingresar otro número")
-		if scan.Scan() {
-			number, err = strconv.Atoi(scan.Text())
-			fmt.Println("el numero que ingresaste es:", number)
-		} else if err != nil {
-
+			if err != nil {
+				continue
+			} else {
+				break
+			}
 		}
 
 	}
+	for i := 1; i <= 10; i++ {
+		text += fmt.Sprintf("%d x %d = %d \n", number, i, number*i)
+	}
+	return text
 }

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/MatiasTejerina07/Golang/ejercicios"
+	"github.com/MatiasTejerina07/Golang/files"
 )
 
 func main() {
@@ -31,6 +31,7 @@ func main() {
 	/* iteraciones.Iterar() */
 	/* iteraciones.JumpsFromTo() */
 	/* iteraciones.AllExcept() */
-	ejercicios.InputNumber()
-
+	/* ejercicios.InputNumber() */
+	//files.SaveTable()
+	files.AddTable()
 }
