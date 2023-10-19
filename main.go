@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/MatiasTejerina07/Golang/funciones"
+	"github.com/MatiasTejerina07/Golang/arreglos_slice"
 )
 
 func main() {
@@ -34,5 +34,7 @@ func main() {
 	/* ejercicios.InputNumber() */
 	//files.SaveTable()
 	/* files.ReadText() */
-	funciones.CallClosure()
+	/* funciones.CallClosure() */
+	/* funciones.Exponencia(2) */
+	arreglos_slice.MuestroArreglos()
 }
