@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/MatiasTejerina07/Golang/mapas"
+	users "github.com/MatiasTejerina07/Golang/Users"
 )
 
 func main() {
@@ -37,5 +37,6 @@ func main() {
 	/* funciones.CallClosure() */
 	/* funciones.Exponencia(2) */
 	/* arreglos_slice.Capacidad() */
-	mapas.ShowMaps()
+	/* mapas.ShowMaps() */
+	users.AltaUser()
 }
