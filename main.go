@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/MatiasTejerina07/Golang/arreglos_slice"
+	"github.com/MatiasTejerina07/Golang/mapas"
 )
 
 func main() {
@@ -36,5 +36,6 @@ func main() {
 	/* files.ReadText() */
 	/* funciones.CallClosure() */
 	/* funciones.Exponencia(2) */
-	arreglos_slice.Capacidad()
+	/* arreglos_slice.Capacidad() */
+	mapas.ShowMaps()
 }
