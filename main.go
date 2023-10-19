@@ -36,5 +36,5 @@ func main() {
 	/* files.ReadText() */
 	/* funciones.CallClosure() */
 	/* funciones.Exponencia(2) */
-	arreglos_slice.MuestroArreglos()
+	arreglos_slice.Capacidad()
 }
