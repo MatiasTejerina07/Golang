@@ -1,8 +1,9 @@
 package main
 
 import (
-	users "github.com/MatiasTejerina07/Golang/ejer_interfaces"
-	modelos "github.com/MatiasTejerina07/Golang/modelos"
+	"fmt"
+
+	goroutines "github.com/MatiasTejerina07/Golang/goroutines"
 )
 
 func main() {
@@ -39,8 +40,13 @@ func main() {
 	/* funciones.Exponencia(2) */
 	/* arreglos_slice.Capacidad() */
 	/* mapas.ShowMaps() */
-	Matias := new(modelos.Mujer)
+	/* Matias := new(modelos.Hombre)
+	users.HumanosRespirando(Matias) */
+	/* defer_panic.EjemploPanic() */
+	go goroutines.MiNombreLentoooo("Matias Tejerina")
 
-	users.HumanosRespirando(Matias)
-
+	fmt.Println("estoy aqui")
+	var input string
+	fmt.Scanln(&input)
+	fmt.Println("EL VALOR DEL INPUTS ES :", input)
 }
