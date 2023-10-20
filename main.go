@@ -43,10 +43,14 @@ func main() {
 	/* Matias := new(modelos.Hombre)
 	users.HumanosRespirando(Matias) */
 	/* defer_panic.EjemploPanic() */
-	go goroutines.MiNombreLentoooo("Matias Tejerina")
 
-	fmt.Println("estoy aqui")
-	var input string
-	fmt.Scanln(&input)
-	fmt.Println("EL VALOR DEL INPUTS ES :", input)
+	canal1 := make(chan bool)
+
+	go goroutines.MiNombreLentoooo("Matias Tejerina", canal1)
+	defer func() {
+		//Await..
+		<-canal1
+	}()
+	fmt.Println("Llamando a mi nombre")
+
 }
